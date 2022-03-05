@@ -47,7 +47,7 @@
         </text>
     </div>
 
-    <div id ="flexbox-container">
+    <div class="flexbox-container">
         <div class="flexbox-item" id= "flexbox-item-1">
             <h1>FEATURED</h1>
 
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <img class="opacity-image" src="media/nature.jpg" onclick= "redirectTo('nature')">
+                    <img class="opacity-image" src="media/nature.jpg" onclick= "redirectTo('nature')" onmouseover="blurImage(1)" onmouseout="resetBlurImage(1)">
                     <text onclick= "redirectTo('nature')" onmouseover="blurImage(1)" onmouseout="resetBlurImage(1)" onmouseover="blurImage(1)" onmouseout="resetBlurImage(1)">Progress in natural science</text>
                 </div>
 
@@ -156,6 +156,41 @@
         </article>
     </div>
     </main>
+        <footer>
+            <section id="about-section">
+                <h1>About</h1>
+                <p>The New York Times is dedicated to helping people understand the world through on-the-ground,
+                    expert and deeply reported independent journalism.</p>
+                <div class="flexbox-container icon-container-2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </section>
+            <section id="instagram-section">
+                <h1>Instagram</h1>
+                <div class="img-grid">
+                    <img class="insta-img" src="media/earth1.jpg">
+                    <img class="insta-img" src="media/earth2.jpg">
+                    <img class="insta-img" src="media/earth3.jpg">
+                    <img class="insta-img" src="media/earth4.jpg">
+                    <img class="insta-img" src="media/earth5.jpg">
+                    <img class="insta-img" src="media/earth1.jpg">
+                </div>
+            </section>
+            <section id ="subscribe-section">
+                <h1>Subscribe!</h1>
+                <p>Enter your email address to subscribe to this blog and
+                receive notifications of new posts by email</p>
+                <form action="/">
+                    <label for="subscribtion">Email: </label>
+                    <input id="subscribtion" name="subscribtion" type="email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </footer>
 </body>
 <script src="javascript/javascript.js" type="text/javascript"></script>
 </html>

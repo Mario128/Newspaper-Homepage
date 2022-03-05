@@ -345,13 +345,11 @@ main{
 }
 
 .grid-container a{
-    text-align: center;
     cursor: pointer;
     color: white;
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 1rem;
 }
 
 .grid-container a:hover{
@@ -360,6 +358,11 @@ main{
 
 .cars-section {
     display: flex;
+}
+
+main h2 {
+    text-align: left;
+    margin-left: 1rem;
 }
 
 footer{
